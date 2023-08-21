@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class card2 extends StatelessWidget {
-  const card2({
+class Card2 extends StatelessWidget {
+  const Card2({
     super.key,
     required this.date,
     required this.image,
@@ -17,10 +17,10 @@ class card2 extends StatelessWidget {
       children: [
         Text(
           date,
-          style: TextStyle(
+          style: const TextStyle(
               fontSize: 15, fontWeight: FontWeight.w300, color: Colors.white),
         ),
-        SizedBox(
+        const SizedBox(
           width: 80,
         ),
         Image.asset(
@@ -28,12 +28,12 @@ class card2 extends StatelessWidget {
           width: 50,
           height: 50,
         ),
-        SizedBox(
+        const SizedBox(
           width: 100,
         ),
         Text(
           temp,
-          style: TextStyle(
+          style: const TextStyle(
               fontSize: 15, fontWeight: FontWeight.w300, color: Colors.white),
         ),
       ],

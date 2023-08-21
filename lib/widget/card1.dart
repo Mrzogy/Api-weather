@@ -1,25 +1,25 @@
 import 'dart:convert';
-import 'package:api_wether/widget/card2.dart';
+import 'package:api_wether/widget/Card2.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 
-class card1 extends StatefulWidget {
-  const card1(
+class Card1 extends StatefulWidget {
+  const Card1(
       {super.key,
-      required this.Contry,
+      required this.contry,
       required this.temp,
       required this.city,
       required this.speed});
-  final String Contry;
+  final String contry;
   final String temp;
   final String city;
   final String speed;
 
   @override
-  State<card1> createState() => _card1State();
+  State<Card1> createState() => _Card1State();
 }
 
-class _card1State extends State<card1> {
+class _Card1State extends State<Card1> {
   @override
   void initState() {
     super.initState();
@@ -36,7 +36,7 @@ class _card1State extends State<card1> {
         data = jsonData; // Store the object data in the state
       });
     } else {
-      print('API call failed with status code: ${response.statusCode}');
+      Error();
     }
   }
 
@@ -45,15 +45,15 @@ class _card1State extends State<card1> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xff2d3340),
+      backgroundColor: const Color(0xff2d3340),
       appBar: AppBar(
         title: Text(
-          widget.Contry,
-          style: TextStyle(
+          widget.contry,
+          style: const TextStyle(
             fontWeight: FontWeight.bold,
           ),
         ),
-        backgroundColor: Color(0xff2d3340),
+        backgroundColor: const Color(0xff2d3340),
         elevation: 0,
       ),
       body: Center(
@@ -67,32 +67,32 @@ class _card1State extends State<card1> {
             ),
             Text(
               widget.temp,
-              style: TextStyle(
+              style: const TextStyle(
                   fontSize: 80,
                   fontWeight: FontWeight.bold,
                   color: Colors.white),
             ),
-            SizedBox(
+            const SizedBox(
               height: 10,
             ),
             Text(
               widget.city,
-              style: TextStyle(
+              style: const TextStyle(
                   color: Colors.white,
                   fontWeight: FontWeight.w300,
                   fontSize: 30),
             ),
-            SizedBox(
+            const SizedBox(
               height: 40,
             ),
-            Text(
+            const Text(
               "Wind",
               style: TextStyle(
                   color: Colors.white,
                   fontWeight: FontWeight.bold,
                   fontSize: 10),
             ),
-            SizedBox(
+            const SizedBox(
               height: 10,
             ),
             Row(
@@ -104,34 +104,34 @@ class _card1State extends State<card1> {
                   width: 30,
                   height: 30,
                 ),
-                SizedBox(
+                const SizedBox(
                   width: 5,
                 ),
                 Text(
                   "${widget.speed}m/s",
-                  style: TextStyle(
+                  style: const TextStyle(
                       color: Colors.white,
                       fontWeight: FontWeight.bold,
                       fontSize: 10),
                 ),
               ],
             ),
-            SizedBox(
+            const SizedBox(
               height: 100,
             ),
-            card2(
+            Card2(
               date: "Tue,Apr 14",
               image:
                   "assets/Image_05-02-1445_AH_at_9.55_PM-removebg-preview.png",
               temp: data["main"]["temp"].toString(),
             ),
-            card2(
+            Card2(
               date: "Wed,Apr 14",
               image:
                   "assets/Image_05-02-1445_AH_at_9.55_PM-removebg-preview.png",
               temp: data["main"]["temp"].toString(),
             ),
-            card2(
+            Card2(
               date: "Thu,Apr 14",
               image:
                   "assets/Image_05-02-1445_AH_at_9.55_PM-removebg-preview.png",
@@ -139,7 +139,7 @@ class _card1State extends State<card1> {
             ),
             Padding(
               padding: const EdgeInsets.only(left: 10),
-              child: card2(
+              child: Card2(
                 date: "Fri,Apr 14",
                 image:
                     "assets/Image_05-02-1445_AH_at_9.55_PM-removebg-preview.png",
