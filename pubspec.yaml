@@ -18,3 +18,7 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+  assets:
+    - assets/image/
+    - assets/Image_05-02-1445_AH_at_9.55_PM-removebg-preview.png
+    - assets/Wind weather lines group symbol ⋆ Free Vectors, Logos, Icons and Photos Downloads.png
