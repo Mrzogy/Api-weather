@@ -61,7 +61,7 @@ class _card1State extends State<card1> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Image.asset(
-              "assets/image/Image_05-02-1445_AH_at_9.55_PM-removebg-preview.png",
+              "assets/Image_05-02-1445_AH_at_9.55_PM-removebg-preview.png",
               width: 100,
               height: 100,
             ),
@@ -99,7 +99,7 @@ class _card1State extends State<card1> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Image.asset(
-                  "assets/image/Wind weather lines group symbol ⋆ Free Vectors, Logos, Icons and Photos Downloads.png",
+                  "assets/Wind weather lines group symbol ⋆ Free Vectors, Logos, Icons and Photos Downloads.png",
                   color: Colors.white,
                   width: 30,
                   height: 30,
@@ -122,19 +122,19 @@ class _card1State extends State<card1> {
             card2(
               date: "Tue,Apr 14",
               image:
-                  "assets/image/Image_05-02-1445_AH_at_9.55_PM-removebg-preview.png",
+                  "assets/Image_05-02-1445_AH_at_9.55_PM-removebg-preview.png",
               temp: data["main"]["temp"].toString(),
             ),
             card2(
               date: "Wed,Apr 14",
               image:
-                  "assets/image/Image_05-02-1445_AH_at_9.55_PM-removebg-preview.png",
+                  "assets/Image_05-02-1445_AH_at_9.55_PM-removebg-preview.png",
               temp: data["main"]["temp"].toString(),
             ),
             card2(
               date: "Thu,Apr 14",
               image:
-                  "assets/image/Image_05-02-1445_AH_at_9.55_PM-removebg-preview.png",
+                  "assets/Image_05-02-1445_AH_at_9.55_PM-removebg-preview.png",
               temp: data["main"]["temp"].toString(),
             ),
             Padding(
@@ -142,7 +142,7 @@ class _card1State extends State<card1> {
               child: card2(
                 date: "Fri,Apr 14",
                 image:
-                    "assets/image/Image_05-02-1445_AH_at_9.55_PM-removebg-preview.png",
+                    "assets/Image_05-02-1445_AH_at_9.55_PM-removebg-preview.png",
                 temp: data["main"]["temp"].toString(),
               ),
             ),
